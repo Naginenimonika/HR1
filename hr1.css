@@ -1,0 +1,72 @@
+/* Basic reset and layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for body and main content */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:min-content;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for the menu items */
+.navbar a:hover {
+    color: #f39c12;
+    transform: scale(1.1);
+}
+
+/* Active state for the navbar when scrolling */
+.scrolled {
+    background-color: #222;
+}
+.logo{
+    width:30px;
+    height:30px;
+    border-radius: 30px;
+    padding-left: -100px;
+}
+main {
+    margin-top: 120px;
+    padding: 20px;
+}
+
+/* Section styling */
+section {
+    padding: 40px;
+    margin-bottom: 150px;
+    border: 1px solid #ddd;
+}
